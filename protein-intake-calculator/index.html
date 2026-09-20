@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en-US" class="layout-utility">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Protein Intake Calculator (g per kg, per Meal)</title>
+<meta name="description" content="Daily protein range for people who strength train, split across your meals.">
+<link rel="canonical" href="https://bodyrecompcalc.com/protein-intake-calculator/">
+<meta property="og:title" content="Protein Intake Calculator (g per kg, per Meal)">
+<meta property="og:description" content="Daily protein range for people who strength train, split across your meals.">
+<meta property="og:url" content="https://bodyrecompcalc.com/protein-intake-calculator/">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/layouts.css">
+<style>:root{--brand:#047857;--accent:#10b981;--bg:#d9e9e0;--surface:#eff8f3;--soft:#e2f0e8;--sunken:#c8ded2;--ink:#0d2119;--ink-2:#274035;--muted:#4f6a5e;--line:#b0cbbd;--line-strong:#8fb3a1;--brand-ink:color-mix(in srgb,var(--brand) 82%,#000 18%);--brand-soft:color-mix(in srgb,var(--brand) 9%,var(--bg));--brand-line:color-mix(in srgb,var(--brand) 28%,var(--line));--warn:#8a4b00;--warn-bg:color-mix(in srgb,#f59e0b 16%,var(--surface));--ok:#0f7b46}:root[data-theme="light"]{--brand:#047857;--accent:#10b981;--bg:#d9e9e0;--surface:#eff8f3;--soft:#e2f0e8;--sunken:#c8ded2;--ink:#0d2119;--ink-2:#274035;--muted:#4f6a5e;--line:#b0cbbd;--line-strong:#8fb3a1;--brand-ink:color-mix(in srgb,var(--brand) 82%,#000 18%);--brand-soft:color-mix(in srgb,var(--brand) 9%,var(--bg));--brand-line:color-mix(in srgb,var(--brand) 28%,var(--line));--warn:#8a4b00;--warn-bg:color-mix(in srgb,#f59e0b 16%,var(--surface));--ok:#0f7b46}:root[data-theme="dark"]{--brand:#047857;--accent:#10b981;--bg:#d9e9e0;--surface:#eff8f3;--soft:#e2f0e8;--sunken:#c8ded2;--ink:#0d2119;--ink-2:#274035;--muted:#4f6a5e;--line:#b0cbbd;--line-strong:#8fb3a1;--brand-ink:color-mix(in srgb,var(--brand) 82%,#000 18%);--brand-soft:color-mix(in srgb,var(--brand) 9%,var(--bg));--brand-line:color-mix(in srgb,var(--brand) 28%,var(--line));--warn:#8a4b00;--warn-bg:color-mix(in srgb,#f59e0b 16%,var(--surface));--ok:#0f7b46}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Body Recomp Calc","item":"https://bodyrecompcalc.com/"},{"@type":"ListItem","position":2,"name":"Protein Intake Calculator","item":"https://bodyrecompcalc.com/protein-intake-calculator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Protein Intake Calculator","url":"https://bodyrecompcalc.com/protein-intake-calculator/","description":"Daily protein range for people who strength train, split across your meals.","applicationCategory":"HealthApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script src="/assets/calculator.js" defer></script>
+<script src="/assets/calc-core.js" defer></script>
+<script>(function(){try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}})()</script>
+<link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/brand/icon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/assets/brand/icon-180.png">
+<link rel="manifest" href="/assets/brand/site.webmanifest">
+<meta name="theme-color" content="#047857">
+<meta property="og:image" content="https://bodyrecompcalc.com/assets/brand/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://bodyrecompcalc.com/assets/brand/og.png">
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="/" aria-label="Body Recomp Calc home"><span class="logo-mark"><img class="lk" src="/assets/brand/lockup.svg" alt="" width="690" height="228" loading="eager"></span></a><nav class="site"><a href="/body-recomp-calculator/">Body Recomposition Macro</a><a href="/protein-intake-calculator/">Protein Intake</a></nav></div></header>
+<main><div class="wrap">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> › Protein Intake Calculator</nav>
+<div class="hero">
+<div>
+
+<h1>Protein Intake Calculator</h1>
+<p class="answer">This protein intake calculator returns 1.6&#8211;2.2 g of protein per kg of body weight per day, then divides that range by the number of meals you eat. At 80 kg that is 128&#8211;176 g a day, or 32&#8211;44 g across four meals. The range is aimed at adults who do resistance training. Works in kilograms or pounds.</p>
+<p class="updated">Updated <time datetime="2026-09-16">16 September 2026</time></p>
+<p class="disclaimer">General estimate only, not medical or dietary advice. Not suitable for anyone under 18, pregnant, or managing a medical condition or eating disorder.</p>
+</div>
+<figure class="hero-art hero-photo"><img src="/assets/img/p-protein-intake-calculator.jpg" alt="A woman standing in a kitchen holding an apple" width="900" height="600" loading="eager" decoding="async"><figcaption>Photo by <a href="https://unsplash.com/@lookphoto?utm_source=marketplace_calc&utm_medium=referral" rel="nofollow noopener">Look Studio</a> on <a href="https://unsplash.com/?utm_source=marketplace_calc&utm_medium=referral" rel="nofollow noopener">Unsplash</a></figcaption></figure>
+</div>
+<div id="calculator" data-calc="protein"><noscript>This calculator needs JavaScript turned on.</noscript></div>
+
+<div class="ad-slot"><!-- Ad slot 1 (below the tool). Leave empty until AdSense is approved. --></div>
+<section class="sec">
+<h2>Where the range comes from (cited)</h2>
+<p>The upper figure comes from a meta-analysis, not from a rule of thumb. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5867436/" rel="nofollow noopener">Morton et al., <em>British Journal of Sports Medicine</em> 2018</a> pooled 49 resistance-training studies and found the plateau in training-induced gains in fat-free mass at <strong>1.62 g of protein per kg per day</strong>, with a 95% confidence interval of 1.03 to 2.20 g/kg/day. The authors note that going to roughly 2.2 g/kg/day may be prudent given the upper bound of that interval. That is where 1.6&#8211;2.2 comes from.</p>
+<p>The <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5477153/" rel="nofollow noopener">ISSN position stand on protein and exercise (J&#228;ger et al., 2017)</a> gives a slightly different figure: it states that 1.4&#8211;2.0 g/kg/day is sufficient for most exercising individuals, and that 2.3&#8211;3.1 g/kg/day may be needed to protect lean mass during periods of eating below maintenance. The two overlap across most of their range.</p>
+<table>
+<thead><tr><th>Source</th><th>Daily protein</th><th>Applies to</th></tr></thead>
+<tbody>
+<tr><td>Morton et al. 2018</td><td>1.62 g/kg (CI 1.03&#8211;2.20)</td><td>Resistance training, gains in fat-free mass</td></tr>
+<tr><td>ISSN position stand 2017</td><td>1.4&#8211;2.0 g/kg</td><td>Most exercising individuals</td></tr>
+<tr><td>ISSN position stand 2017</td><td>2.3&#8211;3.1 g/kg</td><td>Trained people eating below maintenance</td></tr>
+<tr><td>This calculator</td><td>1.6&#8211;2.2 g/kg</td><td>Adults who strength train</td></tr>
+</tbody>
+</table>
+</section>
+<section class="sec">
+<h2>Per-meal split</h2>
+<p>The calculator divides the daily range evenly by the number of meals you enter. It is arithmetic, not a rule: 4 meals at 80 kg gives 32&#8211;44 g per meal, 3 meals gives 43&#8211;59 g.</p>
+<p>The even split is not arbitrary. The <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5477153/" rel="nofollow noopener">ISSN position stand on protein and exercise (J&#228;ger et al., 2017)</a> recommends about <strong>0.25 g of high-quality protein per kg of body weight per serving, or an absolute dose of 20&#8211;40 g</strong>, and says these doses should ideally be distributed evenly every 3 to 4 hours across the day.</p>
+<table>
+<thead><tr><th>Meals per day</th><th>80 kg: per meal</th><th>60 kg: per meal</th></tr></thead>
+<tbody>
+<tr><td>3</td><td>43&#8211;59 g</td><td>32&#8211;44 g</td></tr>
+<tr><td>4</td><td>32&#8211;44 g</td><td>24&#8211;33 g</td></tr>
+<tr><td>5</td><td>26&#8211;35 g</td><td>19&#8211;26 g</td></tr>
+<tr><td>6</td><td>21&#8211;29 g</td><td>16&#8211;22 g</td></tr>
+</tbody>
+</table>
+<p>In practice the daily total matters most. Use the per-meal figure as a target to aim at rather than a threshold to hit exactly, and if one meal falls short, make it up later in the day.</p>
+</section>
+<section class="sec">
+<h2>Food examples</h2>
+<p>Protein per 100 g of food, from <a href="https://fdc.nal.usda.gov/" rel="nofollow noopener">USDA FoodData Central</a>. Weights are as the entry is listed (raw where stated), so cooked portions will be denser per gram because water is lost.</p>
+<table>
+<thead><tr><th>Food (USDA entry)</th><th>Protein per 100 g</th></tr></thead>
+<tbody>
+<tr><td>Chicken, breast, boneless, skinless, raw</td><td>22.5 g</td></tr>
+<tr><td>Fish, tuna, light, canned in water, drained</td><td>19.0 g</td></tr>
+<tr><td>Cheese, cottage, lowfat, 1% milkfat</td><td>12.4 g</td></tr>
+<tr><td>Yogurt, Greek, plain, nonfat</td><td>10.3 g</td></tr>
+<tr><td>Egg, whole, raw, fresh</td><td>12.6 g</td></tr>
+<tr><td>Tofu, extra firm, prepared with nigari</td><td>10.0 g</td></tr>
+<tr><td>Lentils, mature seeds, cooked, boiled</td><td>9.0 g</td></tr>
+<tr><td>Whey protein powder isolate</td><td>58.1 g</td></tr>
+</tbody>
+</table>
+<p>A 40 g target is roughly 180 g of raw chicken breast, or two eggs plus a 200 g pot of nonfat Greek yogurt, or two scoops of whey isolate. Plant sources are less dense per 100 g, so hitting the same total from lentils, tofu and beans means larger portions and more total calories. Check the label or the USDA entry for the specific product you buy, since brands vary.</p>
+<p>Once you have a daily protein figure, the <a href="/body-recomp-calculator/">body recomposition macro calculator</a> fits it into a calorie target with fat and carbs.</p>
+</section>
+<section class="sec">
+<h2>Frequently asked questions</h2>
+<div class="faq">
+<details><summary>Is 100g of protein a day enough for a woman?</summary><p>It depends on body weight. At 1.6&#8211;2.2 g/kg, 100 g a day covers a woman of roughly 45 to 62 kg (100 to 137 lb) who strength trains. Above about 62 kg it falls below the range this calculator uses, and a 70 kg woman would land at 112&#8211;154 g. Enter your own weight rather than using a round number.</p></details>
+<details><summary>How much protein do I need by age?</summary><p>This calculator does not vary the range by age: it applies 1.6&#8211;2.2 g per kg to any adult body weight you enter. The sources it cites, <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5867436/" rel="nofollow noopener">Morton et al., <em>British Journal of Sports Medicine</em> 2018</a> and the <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5477153/" rel="nofollow noopener">ISSN position stand on protein and exercise (J&#228;ger et al., 2017)</a>, frame their recommendations around exercising adults rather than age brackets. Requirements in older adults and in children are handled differently, so ask a dietitian or doctor rather than this tool.</p></details>
+<details><summary>How much protein per day for weight loss?</summary><p>Eating below maintenance is where protein matters most, because it helps protect lean mass. The <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5477153/" rel="nofollow noopener">ISSN position stand on protein and exercise (J&#228;ger et al., 2017)</a> states that 2.3&#8211;3.1 g/kg/day may be needed to maximise retention of lean mass in resistance-trained people during periods below maintenance, which is above this calculator&#8217;s 1.6&#8211;2.2 g/kg range. Using the top of the range here, 2.2 g/kg, is a reasonable starting point while cutting.</p></details>
+<details><summary>Is 200 g of protein too much for a day?</summary><p>For a large, trained adult it sits inside the usual ranges: 200 g is 2.2 g/kg at about 91 kg (200 lb). For a 60 kg person it is 3.3 g/kg, above both ranges cited on this page and unlikely to add anything. None of this is medical advice, and anyone with kidney disease or another medical condition should get an individual recommendation from a clinician.</p></details>
+</div>
+</section>
+<section class="sec is-short">
+<h2>Sources</h2>
+<ul class="sources">
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5867436/" rel="nofollow noopener">Morton et al., <em>British Journal of Sports Medicine</em> 2018</a> (plateau 1.62 g/kg/day, 95% CI 1.03&#8211;2.20)</li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5477153/" rel="nofollow noopener">ISSN position stand on protein and exercise (J&#228;ger et al., 2017)</a> (1.4&#8211;2.0 g/kg/day; 0.25 g/kg per serving or 20&#8211;40 g, every 3&#8211;4 h)</li>
+<li><a href="https://fdc.nal.usda.gov/" rel="nofollow noopener">USDA FoodData Central</a> (protein per 100 g)</li>
+</ul>
+</section>
+<section class="sec is-short">
+<h2>Related</h2>
+<ul>
+<li><a href="/body-recomp-calculator/">Body Recomposition Macro Calculator</a></li>
+</ul>
+<p class="disclaimer">General estimate only, not medical or dietary advice. Not suitable for anyone under 18, pregnant, or managing a medical condition or eating disorder.</p>
+</section>
+</div></main>
+<footer class="site"><div class="wrap">
+<div class="f-brand"><a class="footer-brand" href="/" aria-label="Body Recomp Calc home"><span class="logo-mark"><img class="lk" src="/assets/brand/lockup.svg" alt="" width="690" height="228" loading="eager"></span></a></div>
+<nav class="f-col" aria-label="Calculators"><h3>Calculators</h3><ul><li><a href="/body-recomp-calculator/">Body Recomposition Macro Calculator</a></li><li><a href="/protein-intake-calculator/">Protein Intake Calculator</a></li></ul></nav>
+<nav class="f-col" aria-label="Company"><h3>Company</h3><ul><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/terms/">Terms</a></li></ul></nav>
+<div class="f-legal"><p>General estimate only, not medical or dietary advice. Not suitable for anyone under 18, pregnant, or managing a medical condition or eating disorder.</p><p>© <span id="y"></span> Body Recomp Calc</p></div>
+</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+
+</body>
+</html>
